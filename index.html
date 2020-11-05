@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <!-- -->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="main.css">
+        <!--<meta name = "desciption" content = "Joe Gelsomini Portfolio">-->
+
+        <title>Joe Gelsomini</title>
+      
+    </head>
+
+    <body>
+        <!--<a name="top"></a>-->
+        <header>
+            <nav class = "top-nav"data-aos="slide-down" data-aos-delay="2700"> 
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#Projects" class="w3-bar-item w3-button">Projects</a>
+                <a href="#experience" class="w3-bar-item w3-button">Experience</a>
+                <a href="#education" class="w3-bar-item w3-button">Education</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </nav>
+            
+
+            <div class = "landing-text">
+                <h1 data-aos="fade-in" data-aos-delay="900">Joe Gelsomini</h1>
+
+                <audio id="last-name">
+                    <source src="audio/pronounciation.ogg" type="audio/ogg">
+                    <source src="audio/pronounciation.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <a onclick = "playName()" data-aos="fade-in" data-aos-delay="2100">/ʤɛl səʊ miː niː/
+                    <i class='fas fa-volume-up' color = #eee font-size></i>
+                </a>
+
+                <script>
+                    var x = document.getElementById("last-name"); 
+                    
+                    function playName() { 
+                      x.play(); 
+                    } 
+                </script> 
+
+            </div>
+        </header>
+        
+        <section class = "about" id = "about"><!-- About Section-->
+            <div class="container">
+                <div class="profile-img" 
+                data-aos="fade-right" data-aos-delay="300">
+                    <img src="images/temp_profile_pic.jpg" alt="">
+                </div>
+                <div class="about-details"
+                >
+                    <div class="about-heading">
+                        <h1>About</h1>
+                        <h6>Who I am</h6>
+                    </div>
+                    <p data-aos="fade-left" data-aos-delay="300">
+                        Hello and welcome. My name is Joe Gelsomini, and I am an aspiring software engineer with a BS in Computer 
+                        Science with a Math minor from the University of Massachusetts Lowell. I've had an interest in computers from 
+                        a young age which naturally drew me to explore Computer Science in college. One thing I always enjoyed about the 
+                        field is the creative aspect to it. Tackling challenges can be frustrating, but the open ended nature of many problems
+                        makes it satisfying to experiment and explore possibilities. The creativity behind the problem solving process is 
+                        rewarding, and this is also true in the design process, which I got to explore more in the development of this web page.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class ="Projects" id = "Projects"> <!-- Projects Section-->
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Projects</h1>
+                    <h6>School projects and personal work</h6>
+                </div>
+
+                <div class="project-item" data-aos="fade-left" data-aos-delay="300"><!--Project item begining-->
+                    <div class="project-video has-margin-right">
+                        <!--<img src="images/Evil-Hangman.PNG" alt="">-->
+                        <video id = "EvilHangman" autoplay muted loop>
+                            <source src = "videos/EvilHangmanVideo_Trim.mp4" type = "video/mp4" >
+                        </video>
+                    </div>
+                    <div class="project-description">
+                        <h1>Evil Hangman (2018)</h1>
+                        <h6>Data Structures</h6>
+                        <p>
+                            <br>Implementation of the Evil Hangman algorithm in the C language. This was the semster long project for 
+                            UMass Lowell's Computing II class, which served as an introduction to data structures. All files available
+                             to play the game are on Github.  The game internally reads in a large text file of words. Then after 
+                             recieving the desired word length from the player as well as desired number of turns, the algorithm 
+                             reads in guesses from the player and eliminates all possible words that would fit that potential guess. 
+                             Managing of words is done with an AVL tree. An easy way to win is to ask for 26 guesses and guess every 
+                             letter in the alphabet! 
+                        </p>
+                        <a href = "https://github.com/JoeGelso/UML/tree/master/Evil%20Hangman" class = "cta">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-item" data-aos="fade-right" data-aos-delay="300"><!--Project item begining-->
+                    <div class="project-description has-margin-right">
+                        <h1>Big Int (2018)</h1>
+                        <h6>Object Oriented Programming</h6>
+                        <p><br>
+                           Implementation of the Big Integer class in the C++ language. The class features the ability to construct
+                           class instances via standard C++ integer parameters, or a completely numeric string. The Big Integer class was designed to 
+                           behave as the standard integer class, but with the ability to store much larger integer values. A standard string is used 
+                           internally as a representation for the integer, which meant that the standard integer operations had to be reimplemented 
+                           from scratch. This project was created for UMass Lowell's Computing III course. 
+                        </p>
+                        <a href = "https://github.com/JoeGelso/UML/tree/master/Big%20Int" class = "cta">View on Github</a>
+                    </div>
+
+                    <div class="project-img">
+                        <img src="images/cpp-logo.png" alt="" width = 400>
+                    </div>   
+                </div>
+
+                <div class="project-item" data-aos="fade-left" data-aos-delay="300"><!--Project item begining-->
+                    <div class="project-video has-margin-right">
+                        <video src="videos/ants_and_doodlebugs_cropped.mp4" autoplay muted loop></video>
+                    </div>
+                    <div class="project-description">
+                        <h1>Ants and Doodlebugs(2018)</h1>
+                        <h6>Polymorphism</h6>
+                        <p><br>
+                           Ants and Doodlebugs was another project from UMass Lowell's Computing III course. This simple simulation displays a series of time steps 
+                           representing the interactions of two different species. Ants are represented as green 'O's while the Doodlebugs are the red 'X's. The different
+                           critters move about the board in a random manner and perodically repopulate, but whenever the doodlebugs sense an ant in an adjacent tile, they 
+                           move onto the tile occupied by the ant, consuming it. If the Doodlebugs go more than 3 time steps without eating, they will die, which is 
+                           represented by them vanishing from the board. The populations of the critters follow a cyclic pattern. This project also demonstrates polymorphism, 
+                           as each creature is derived from a basic tile class, and implement movement differently.
+                        </p>
+                        <a href = "https://github.com/JoeGelso/UML/tree/master/Ants%20and%20Doodlebugs" class = "cta">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-item" data-aos="fade-right" data-aos-delay="300"><!--Project item begining-->
+                    <div class="project-description has-margin-right">
+                        <h1>Pythagoras Tree (2019)</h1>
+                        <h6>Recursive Graphics</h6>
+                        <p><br>
+                           A C++ program that generates and displays a pythagroas tree. The Pythagoras tree class (pTree)
+                           derives from the drawable class from the SFML library. The command arguments that the program accepts are recursion depth and
+                           length of the base square. Given a length L, the entire tree fits snugly inside a window with dimensions <i>6L × 4L</i>. The tree is 
+                           generated recursively. With each call to the geneartion function, the base of the current branch is drawn, then the left and right 
+                           branch of that square gets generated and drawn until the recursion depth reaches zero. This project was completed for UMass Lowell's 
+                           Computing IV class.
+                        </p>
+                        <a href = "https://github.com/JoeGelso/UML/tree/master/Pythagoras%20Tree" class = "cta">View on Github</a>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/pTree.png" alt="" width = 400>
+                    </div>
+                </div>
+
+                <div class="project-item" data-aos="fade-left" data-aos-delay="300"><!--Project item begining-->
+                    <div class="project-img has-margin-right">
+                        <img src="images/PyTorch.png" alt="" width = 400>
+                    </div>
+                    <div class="project-description">
+                        <h1>Multi Label Textual Classifier (2020)</h1>
+                        <h6>Natural Language Processing</h6>
+                        <p><br>
+                           Trained a Recurrent Neural Network to classify article headlines into 8 different possible categories. The dataset used was a subset taken from Kaggle's 
+                           News Category Dataset, which is comprised of approximately 200k news headlines from the Huffington Post under 41 different categories. The RNN was 
+                           implemented using Pytorch's torch.nn.Module class and acheives a test accuracy of 74%. This was an assignment completed in Jupyter Notebook for 
+                           UMass Lowell's Natural Language Processing class.
+                        </p>
+                        <a href = "https://github.com/JoeGelso/UML/tree/master/NLP%20Multi%20class%20textual%20classification" class = "cta">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-item" data-aos="fade-right" data-aos-delay="300"><!--Project item begining-->
+                    <div class="project-description has-margin-right">
+                        <h1>Online Responsive portfolio (2020)</h1>
+                        <h6>Web Development</h6>
+                        <p><br>
+                           The final item I choose to show off in my portfolio is the portfolio itself, quite meta isn't it? This is a personal project with the purpose of giving myself more
+                           experience in front end web development with html and css. It also has the added benefit of being able to grow alongside myself,
+                           as I gain more relevant skills and experience to show off here in the future. Thanks for checking it out, and I hope you enjoyed the background picture of the Giant's 
+                           Causeway in Ireland, which was taken by myself on a family trip some time in the Summer of 2018.
+                        </p>
+                        <a href = "#" class = "cta">View on Github</a>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/HTML_logo.png" alt="" width = 400>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End projects section -->
+
+        <section class = "experience" id = "experience"> <!-- Work Experience section-->
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Work Experience</h1>
+                    <h6>Past and current jobs</h6>
+                </div>
+                <div class="timeline"
+                data-aos="fade-down" data-aos-delay="300">
+                    <ul>
+                        <li class="date" data-date = "2016-2020">
+                            <h1>AMC Theatres Shift Leader</h1>
+                            <p>
+                                Leadership position.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section><!-- End experience section-->
+
+        <section class = "education" id = "education"> <!-- Education Section -->
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Education</h1>
+                </div>
+                <div class = "timeline"
+                data-aos="fade-down" data-aos-delay="300">
+                    <ul>
+                        <li class="date" data-date = "2015-2018">
+                            <h1>Middlesex Community College</h1>
+                            <p>
+                                Transfer Credits
+                            </p>
+                        </li>
+                        <li class="date" data-date = "2018-2020">
+                            <h1>University of Massachusetts Lowell</h1>
+                            <p>Bachelors of Science in Computer Science with Math minor</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section><!--end education section-->
+
+        <section class = "contact" id = "contact"> <!--Contact Section -->
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Contact Information</h1>
+                    <h6>Student email preffered</h6>
+                </div>   
+
+                <div class="contact-details">
+                    <p>
+                        joseph.gelsomini@student.uml.edu<br>
+                        joe.gelso@gmail.com<br>
+                        (978)-727-5011<br>
+                    </p> 
+
+                    <ul class="social-icons" style="list-style-type:none">
+                        <li>
+                            <a href="https://github.com/JoeGelso" class="icon-link">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/joe-gelsomini-57881b1a2/" class="icon-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--<a href="#top">Go to top</a>-->
+       <footer class="copyright">
+           <!--<div class="up" id = "up">
+             <i class="fas fa-chevron-up"></i>
+           </div>-->
+           <p>&copy; 2020 Joe Gelsomini</p>
+       </footer>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
