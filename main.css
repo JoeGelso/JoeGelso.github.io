@@ -429,7 +429,8 @@ header{
    
 
 .top-nav a:not(:first-child) {display: none;}
-  .top-nav a.icon {
+
+.top-nav a.icon {
     float: right;
     display: block;
   }
