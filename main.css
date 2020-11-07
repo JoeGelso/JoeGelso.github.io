@@ -435,7 +435,7 @@ header{
     display: block;
   }
   
-  .top-nav.responsive {position: relative;}
+  .top-nav.responsive {position: fixed;}
   .top-nav.responsive .icon {
     position: absolute;
     right: 0;
