@@ -19,7 +19,7 @@
         <a id="top"></a>
         <header>
                 <nav class = "top-nav" id = "myTopnav"> 
-                    <a href="#top">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="#about" >About</a>
                     <a href="#Projects">Projects</a>
                     <a href="#experience" >Experience</a>
@@ -65,30 +65,89 @@
             </div>
         </header>
         
-        <section class = "about" id = "about"><!-- About Section-->
+        <section class="about" id="about">
             <div class="container">
-                <div class="profile-img" 
-                data-aos="fade-right" data-aos-delay="300">
-                    <img src="images/Gelsomini_Joe.JPG" alt="">
-                </div>
-                <div class="about-details"
-                >
-                    <div class="about-heading">
-                        <h1>About</h1>
-                        <h6>Who I am</h6>
-                    </div>
-                    <p data-aos="fade-left" data-aos-delay="300">
-                        Hello and welcome. My name is Joe Gelsomini, and I am an aspiring software engineer with a BS in Computer 
-                        Science with a Math minor from the University of Massachusetts Lowell. I've had an interest in computers from 
-                        a young age which naturally drew me to explore Computer Science in college. One thing I always enjoyed about the 
-                        field is the creative aspect to it. Tackling challenges can be frustrating, but the open ended nature of many problems
-                        makes it satisfying to experiment and explore possibilities. The creativity behind the problem solving process is 
-                        rewarding, and this is also true in the design process, which I got to explore more in the development of this web page.
-                    </p>
+                <div class="about-section-heading" data-aos="fade-in" data-aos-delay="300">
+                    <h1>About</h1>
+                    <h6>About Me</h6>
                 </div>
 
+                <!-- About Item 1 -->
+                <div class="about-item" >
+                    <div class="about-img" data-aos="fade-left" data-aos-delay="300">
+                        <img src="images/Joe-G-kayak-ai-extended.jpg" alt="Joe">
+                    </div>
+                    <div class="about-description" data-aos="fade-left" data-aos-delay="300">
+                        <h1>Professional Introduction</h1>
+                        <p>
+                            I'm Joe Gelsomini, a Computer Science graduate from the University of 
+                            Massachusetts, Lowell. My current role is a Cybersecurity Engineer for Werfen 
+                            North America.
+
+                            Over the past three years at Werfen, I have focused on creating automated security 
+                            solutions intended for our medical devices located in hospital laboratories across 
+                            the world.
+                            
+                            I've helped streamline device maintenance by replacing complex manual patching 
+                            processes with automated installers. My tools have become the standard approach for 
+                            applying cybersecurity patches and fixes to our products in the field.
+                            
+                            Most notably, my solutions have been recognized to reduce instrument down time 
+                            during device maintenance by 60%.
+                            
+                            My efforts have been recognized to positively impact device security, patient safety, 
+                            and compliance with international health standards within my organization.
+                         </p>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- About Item 2 -->
+                <div class="about-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="about-description">
+                        <h1>Professional Aspirations</h1>
+                        <p>
+                            One of the most gratifying aspects of my career has been the oppurtunity to 
+                            use the techinical skills I gained in college to provide a real world impact. 
+                            Going forward in my career, I want to continue to create solutions that positively
+                            impact the lives and jobs of others, while also continuing to develop my technical 
+                            knowlege and experience. I have the ability to work as an individual, and as part 
+                            of a team. During my time at Werfen, I have had oppurtunities to work with other Cybersecurity
+                            engineers on my team, as well as other roles outside of my department, including field 
+                            service managers and systems engineers. I am most interested in pursuing roles related to 
+                            Software engineering and Cybersecurity, with a strong team dynamic, and oppurtunities to work
+                            with engineers in other disciplines.
+                        </p>
+                    </div>
+                    <div class="about-img">
+                        <img src="images/city_lights.jpg" alt="deer">
+                    </div>
+                </div>
+
+                <!-- About Item 3 -->
+                <div class="about-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="about-video has-margin-right">
+                        <!--<img src="images/Evil-Hangman.PNG" alt="">-->
+                        <video id = "Bees" autoplay muted loop>
+                            <source src = "videos/bees_trim.mp4" type = "video/mp4" >
+                        </video>
+                    </div>
+
+                    <div class="about-description">
+                        <h1>Getting personal</h1>
+                        <p>
+                            Technology plays a large role in my life, and I do my best to balance that with other interests. 
+                            I enjoy going on bike trails and nature walks. I am not a professional phtographer, but I 
+                            love to capture what sticks out to me, whether it is beautiful scenery, wildlife, or interesting plants 
+                            or fungi. A favorite creative outlet of mine is cooking, but I am always willing to try and learn new things.
+                        </p>
+                    </div>
+                    
+                </div>
+                <!-- Repeat for more items -->
             </div>
         </section>
+        
 
         <section class ="Projects" id = "Projects"> <!-- Projects Section-->
             <div class="container">
@@ -108,7 +167,7 @@
                         <h1>Evil Hangman (2018)</h1>
                         <h6>Data Structures</h6>
                         <p>
-                            <br>Implementation of the Evil Hangman algorithm in the C language. This was the semster long project for 
+                            <br>Implementation of the Evil Hangman algorithm in the C language. This was the semester long project for 
                             UMass Lowell's Computing II class, which served as an introduction to data structures. All files available
                              to play the game are on Github.  The game internally reads in a large text file of words. Then after 
                              recieving the desired word length from the player as well as desired number of turns, the algorithm 
@@ -231,6 +290,23 @@
                     </div>
                 </div>
 
+                <div class="project-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="project-description has-margin-right">
+                        <h1>kdbx-merge (2024)</h1>
+                        <h6>Personal Project</h6>
+                        <p>
+                            <br>kdbx-merge is a Python script I developed to merge two KeePassXC databases into a single database.
+                            It ensures all entries are retained with their attributes intact and checks for conflicts to avoid data corruption.
+                            This tool helps keep my personal password vaults synchronized across different storage locations.
+                        </p>
+                        <a href="https://github.com/JoeGelso/misc-python-tooling/tree/master/kdbx-merge#readme" class="cta">View on Github</a>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/KeePassXC.png" alt="KeePassXC Logo" width="400">
+                    </div>
+                </div>
+                
+
             </div>
         </section><!-- End projects section -->
 
@@ -251,9 +327,9 @@
                         </li>
 
                         <li class="date" data-date = "April 2021 - Present">
-                            <h1>Instrumentation Laboratory</h1>
+                            <h1>Werfen North America</h1>
                             <p>
-                                Cybersecurity Software Test Internship.
+                                Cybersecurity Engineer
                             </p>
                         </li>
 
@@ -279,19 +355,18 @@
             </div>
         </section><!--end education section-->
 
-        <section class = "contact" id = "contact"> <!--Contact Section -->
+        <section class="contact" id="contact"> <!--Contact Section -->
             <div class="container">
                 <div class="section-heading">
                     <h1>Contact Information</h1>
                 </div>   
-
+        
                 <div class="contact-details">
                     <p>
-                        joseph_gelsomini@student.uml.edu<br>
                         joe.gelso@gmail.com<br>
                         (978)-727-5011<br>
-                    </p> 
-
+                    </p>
+        
                     <ul class="social-icons" style="list-style-type:none">
                         <li>
                             <a href="https://github.com/JoeGelso" class="icon-link">
@@ -303,14 +378,17 @@
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </li>
+                        <li>
+                            <a href="docs/Joe Gelsomini Resume -Spring 2024.pdf" target="_blank" class="cta">View My Resume</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </section>
-
+        </section> <!-- End contact section-->
+        
         
        <footer class="copyright">
-           <p>&copy; 2020 Joe Gelsomini</p>
+           <p>&copy; 2024 Joe Gelsomini</p>
        </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

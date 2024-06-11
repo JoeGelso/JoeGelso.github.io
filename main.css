@@ -170,28 +170,37 @@ header{
 
 /*start about*/
 .about .container{
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10rem;
 }
 
-.about-heading{
-  text-align: center;  
+.header-content h1, .header-content h6 {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.about-section-heading{
+  width: 100%;
+  text-align: center;
+  padding:24rem 0;
+  background-image: url('images/reflection.jpg');
+  background-size: cover;
+  background-position: center;  
   line-height: normal;
-  margin-bottom: 6rem;
+  margin-bottom: 25rem;
 
 }
 
-.about-heading h1{
+.about-section-heading h1{
     font-size: 10rem;
     position: relative;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
 
-.about-heading h1::before,
-.about-heading h1::after{
+.about-section-heading h1::before,
+.about-section-heading h1::after{
     content: '';
     position: absolute;
     bottom: -.5rem;
@@ -200,14 +209,14 @@ header{
     opacity: 1;
 }
 
-.about-heading h1::before{
+.about-section-heading h1::before{
     width: 15rem;
     height: 3px;
     border-radius: 1rem;
     background: linear-gradient(to top, #276174, #33c58e, #63fd86 );
 }
 
-.about-heading h1::after{
+.about-section-heading h1::after{
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 100%;
@@ -215,7 +224,7 @@ header{
     background: #33c58e;
 }
 
-.about-heading h6{
+.about-section-heading h6{
     font-size: 2rem;
     font-weight: 300;
 
@@ -228,6 +237,61 @@ header{
 
 .about-details{
     flex: 1;
+}
+
+/*About items*/
+.about-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.about-item:last-child{
+    margin-bottom: 0;
+}
+
+.about-img{
+    width:50rem;
+    flex: 1;
+}
+
+.about-video{
+    width: 50rem;
+    flex: 1;
+}
+
+.about-description{
+    flex: 1.5;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha for transparency */
+    padding: 2rem; /* Adds padding around the text */
+    border-radius: 8px; /* Optional: adds rounded corners to the background */
+    margin: 1rem; /* Adds margin around the text block for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow for depth */
+
+}
+
+.about-description h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+.about-description h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.about-description .cta{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    color:  #33c58e;
+    transition: color 650ms;
+}
+
+.about-description .cta:hover{
+    color:#63fd86;
 }
 /*end about*/
 
@@ -348,31 +412,71 @@ header{
 
 /*start contact*/
 
-.contact-details{
+.contact-details {
     text-align: center;
 }
 
-.contact-details i{
+.contact-details i {
     font-size: 5rem;
     transition: color 650ms;
 }
 
-.contact-details ul li{
-    display: inline;
-}
-
-.social-icons{
+.contact-details ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
+    padding: 0;
 }
 
-.fa-github-square:hover{
+.contact-details ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.social-icons .cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #33c58e;
+    border-radius: 8px;
+    transition: background-color 650ms, color 650ms;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.social-icons .cta:hover {
+    background-color: #63fd86;
+    color: #383838; /* Change text color to footer background color */
+}
+
+.fa-github-square:hover {
     color: #6e5494;
 }
 
-.fa-linkedin:hover{
+.fa-linkedin:hover {
     color: #0077b5;
 }
 /*end contact*/
+
+/*start footer*/
+.copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #383838;
+    padding: 2rem;
+    position: relative;
+}
+
+.copyright p {
+    font-size: 1.5rem;
+}
+/*end footer*/
+
+
+
+
 
 /*start footer*/
 .copyright{
